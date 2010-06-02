@@ -276,7 +276,6 @@ public class Elf2 extends JFrame implements ActionListener, OutputListener {
 		elf2.setVisible(true);
 	}
 
-	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == jMenuItemExit) {
 			this.dispose();
@@ -420,14 +419,12 @@ public class Elf2 extends JFrame implements ActionListener, OutputListener {
 		this.mpButton.setSelected(this.isMp);
 	}
 
-	@Override
 	public void setPort(int index, byte value) {
 		if (index == 3) {
 			this.setHex(value);
 		}
 	}
 
-	@Override
 	public void setQ(boolean isOn) {
 		this.setQLed(isOn);
 	}
